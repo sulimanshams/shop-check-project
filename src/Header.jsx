@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Box, Typography , Button } from "@mui/material";
+import { Box, Typography  } from "@mui/material";
 import bgImage from "./assets/background-image.png";
 
 export default function Header() {
