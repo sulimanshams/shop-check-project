@@ -1,16 +1,9 @@
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import HeaderComponent from "./Header";
-
-const theme = createTheme(); 
+import Header from "./Header";
 
 function App() {
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <HeaderComponent />
-    </ThemeProvider>
-  );
+  return(
+    <Header />
+  )
 }
 
 export default App;
