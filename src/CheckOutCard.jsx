@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Container, Grid, Paper } from "@mui/material";
+import ContactForm from "./ContactForm";
 
 export default function CheckoutCard() {
   return (
@@ -19,7 +20,7 @@ export default function CheckoutCard() {
             md={6}
             sx={{ bgcolor: "grey.100", p: { xs: 2, md: 3 } }}
           >
-            <CardList />
+            {/* <CardList /> */}
           </Grid>
           <Grid
             item
