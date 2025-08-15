@@ -24,5 +24,50 @@ function Row({label , value , bold}) {
 }
 
 export default function CardList(){
- 
+        return(
+            <Box>
+                <List disablePadding>
+                        {items.map((it)=> (
+                            <ListItem key={it.id} 
+                            sx={{
+                                px:0,
+                                py:1.5,
+                                alignItems:"flex-start",
+                                gap:"1.5",
+                                borderBottom:"1px solid",
+                                borderColor:"divider"
+                            }}
+                            secondaryAction={
+                                <IconButton size="small" edge="end" aria-label="remove">
+                                    <CloseIcon  fontSize="small"/>
+                                </IconButton>
+                            }
+                            >
+                                <Avatar 
+                                variant="rounded"
+                                src={it.img}
+                                alt={it.name}
+                                sx={{
+                                    height:56,
+                                    width:56,
+                                    bgcolor:"gray.200"
+                                }}
+                                />
+                                <Box sx={{flexGrow:1}}>
+                                        <Box sx={{display:"flex" , justifyContent:"space-between" , gap:1}}>
+                                                <Typography sx={{fontWeight:700}}>{it.name}</Typography>
+                                                <Typography sx={{fontWeight:800}}>{it.price.toFixed(2)}</Typography>
+
+                                               
+                                                    <Typography variant="body2" color="text.secondary">{it.color}</Typography>
+
+                                                    <Typography variant="caption" color="text.secondary">{it.qty}</Typography>
+                                               
+                                        </Box>
+                                </Box>
+                            </ListItem>
+                        ))}
+                </List>
+            </Box>
+        )
 }
