@@ -68,6 +68,29 @@ export default function CardList(){
                             </ListItem>
                         ))}
                 </List>
+                <Box sx={{display:"flex" ,  gap:1.5 , mt:2}}>
+                    <TextField 
+                    fullWidth
+                    placeholder="Enter Coupon code"
+                    size="medium"
+                    InputProps={{sx:{borderRadius:2}}}
+                    />
+                    <Button variant="contained" 
+                    sx={{bgcolor:"#111", 
+                        "&:hover": { bgcolor: "#000" },
+                              borderRadius: 2,
+                               px: 2.5,
+                    }}  
+                    >
+                        Apply coupon
+                    </Button>
+                </Box>
+                <Box sx={{mt:2}}>
+                            <Row label="Sub total" value="$2597.00" />
+                            <Row label="Tax" value="$623.28" />
+                            <Divider sx={{ my: 1.25 }} />
+                            <Row label="Total" value="$3220.28" bold />
+                </Box>
             </Box>
         )
 }
