@@ -96,7 +96,7 @@ export default function CartList() {
                 <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:700 , fontSize:"1.5rem"}}>
                     {it.name}
                     </Typography>
-                <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:400 , fontSize:"1rem" , mt:1 , ml:"390px"}}>
+                <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:400 , fontSize:"1rem" , mt:1 , ml:"350px"}}>
                   {money(it.price)}
                 </Typography>
               </Box>
@@ -111,20 +111,22 @@ export default function CartList() {
         ))}
       </List>
 
-      <Box sx={{ display: "flex", gap: 1.5, mt: 2 }}>
+      <Box sx={{ display: "flex", gap: 1.5, mt:2 , width:"630px" }}>
         <TextField
           fullWidth
           placeholder="Enter coupon code"
           size="medium"
-          InputProps={{ sx: { borderRadius: 2 } }}
+          InputProps={{ sx: { borderRadius:"10px" ,  bgcolor:"white"}  }}
         />
         <Button
           variant="contained"
           sx={{
             bgcolor: "#111",
             "&:hover": { bgcolor: "#000" },
-            borderRadius: 2,
+            borderRadius:"10px",
             px: 2.5,
+            width:"300px",
+            height:"55px"
           }}
         >
           Apply Coupon
