@@ -6,12 +6,12 @@ import CardList from "./CardList";
 export default function CheckoutCard() {
   return (
     <Container
-      maxWidth="lg"
+      maxWidth="100px"
       sx={{
        mt:{xs:-4 , md:-6} , position:"relative",zIndex:2
       }}
     >
-      <Paper elevation={3} sx={{ overflow: "hidden", borderRadius: 3 }}>
+      <Paper elevation={3} sx={{ overflow: "hidden", borderRadius:1 }}>
         <Grid container>
           <Grid
             item

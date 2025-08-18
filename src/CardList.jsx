@@ -85,7 +85,7 @@ export default function CartList() {
                     }}
                     />
 
-            <Box sx={{ flexGrow: 1 }}>
+            <Box sx={{ flexGrow:1 }}>
               <Box
                 sx={{
                   display: "flex",
@@ -93,8 +93,10 @@ export default function CartList() {
                   gap: 1,
                 }}
               >
-                <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:700 , fontSize:"1.5rem"}}>{it.name}</Typography>
-                <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:400 , fontSize:"1rem" , mt:1}}>
+                <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:700 , fontSize:"1.5rem"}}>
+                    {it.name}
+                    </Typography>
+                <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:400 , fontSize:"1rem" , mt:1 , ml:"390px"}}>
                   {money(it.price)}
                 </Typography>
               </Box>

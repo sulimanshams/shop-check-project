@@ -27,7 +27,7 @@ export default function Header() {
           gap: 2,
         }}
       >
-        <Typography variant="h4" sx={{ color: "#fff", fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ color: "#fff"  , fontFamily:"Inter , sans-serif" , fontWeight:700 , fontSize:"2rem" }}>
           Checkout
         </Typography>
       </Box>
