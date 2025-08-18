@@ -2,14 +2,13 @@ import React from "react";
 import { Box, Container, Grid, Paper } from "@mui/material";
 import ContactForm from "./ContactForm";
 import CardList from "./CardList";
+
 export default function CheckoutCard() {
   return (
     <Container
-      maxWidth="md"
+      maxWidth="lg"
       sx={{
-        position: "relative",
-        zIndex: 2,
-        mt: { xs: -4, md: -6 },
+       mt:{xs:-4 , md:-6} , position:"relative",zIndex:2
       }}
     >
       <Paper elevation={3} sx={{ overflow: "hidden", borderRadius: 3 }}>
