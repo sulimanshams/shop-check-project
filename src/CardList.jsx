@@ -46,7 +46,7 @@ function Row({ label, value, bold }) {
 
 export default function CartList() {
   return (
-    <Box>
+    <Box sx={{maxWidth:500}}>
       <List disablePadding>
         {items.map((it) => (
           <ListItem
@@ -80,30 +80,30 @@ export default function CartList() {
                         objectFit: "contain",
                         width: "100%",
                         height: "100%",
-                         
                         },
                     }}
                     />
 
-            <Box sx={{ flexGrow:1 }}>
+            <Box sx={{ flexGrow:1}}>
               <Box
                 sx={{
                   display: "flex",
-                  justifyContent: "space-between",
-                  gap: 1,
+                  justifyContent:"space-between",
+                  // gap: 1,
+                  // width:"100px"
                 }}
               >
                 <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:700 , fontSize:"1.5rem"}}>
                     {it.name}
                     </Typography>
-                <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:400 , fontSize:"1rem" , mt:1 , ml:"200px"}}>
+                <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:400 , fontSize:"1rem" , mt:1}}>
                   {money(it.price)}
                 </Typography>
               </Box>
               <Typography variant="body2" color="text.secondary" sx={{fontFamily:"Inter , sans-serif" , fontWeight:400, fontSize:"1rem"}}>
                 {it.color}
               </Typography>
-              <Typography variant="caption" color="text.secondary" sx={{display:"block" , mt:4, fontFamily:"Inter , sans-serif" , fontWeight:200, fontSize:"1rem"}}>
+              <Typography variant="caption" color="text.secondary" sx={{ mt:4, fontFamily:"Inter , sans-serif", fontWeight:200, fontSize:"1rem"}}>
                 x {it.qty}
               </Typography>
             </Box>
@@ -111,12 +111,12 @@ export default function CartList() {
         ))}
       </List>
 
-      <Box sx={{ display: "flex", gap: 1.5, mt:2 , width:"630px" }}>
+      <Box sx={{ display: "flex", gap: 1.5, mt:2 }}>
         <TextField
           fullWidth
           placeholder="Enter coupon code"
           size="medium"
-          InputProps={{ sx: { borderRadius:"10px" ,  bgcolor:"white"}  }}
+          InputProps={{ sx: { borderRadius:"10px" ,  bgcolor:"white" , width:"500px"}}}
         />
         <Button
           variant="contained"
@@ -127,7 +127,7 @@ export default function CartList() {
             px: 2.5,
             width:"210px",
             height:"55px",
-            mr:"-90px",
+            mr:"-7px",
             fontFamily:"Inter , sans-serif",
             fontSize:"1rem"
           }}
