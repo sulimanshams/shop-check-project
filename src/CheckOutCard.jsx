@@ -6,9 +6,9 @@ import CardList from "./CardList";
 export default function CheckoutCard() {
   return (
     <Container
-      maxWidth="100px"
+        maxWidth="100%"
       sx={{
-       mt:{xs:-4 , md:-6} , position:"relative",zIndex:2
+       mt:{xs:-4 , md:-6} , position:"relative",zIndex:2 , width:"1200px"
       }}
     >
       <Paper elevation={3} sx={{ overflow: "hidden", borderRadius:1 }}>

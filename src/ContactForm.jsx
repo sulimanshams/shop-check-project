@@ -9,9 +9,9 @@ export default function ContactForm(){
             <Typography variant="h6" sx={{fontWeight:880, mb:2}}>Contact Information</Typography>
             <Stack spacing={2} sx={{width:"100%"}}>
                 <Typography variant="body2" sx={{mb:"0.5" , fontWeight:600}}>First & Last name</Typography>
-                <TextField fullWidth  placeholder="Enter first & last name" sx={{minWidth:"500px"}} InputProps={{sx:{borderRadius:2 }}} />
+                <TextField fullWidth  placeholder="Enter first & last name" sx={{minWidth:"500px"}} InputProps={{sx:{borderRadius:0.5 }}} />
                 <Typography variant="body2" sx={{mb:"0.5" , fontWeight:600}}>Email Address</Typography>
-                <TextField fullWidth type="email" label="Email Address " placeholder="Enter Email Address" InputProps={{sx:{borderRadius:2}}} /> 
+                <TextField fullWidth type="email" label="Email Address " placeholder="Enter Email Address" InputProps={{sx:{borderRadius:0.5}}} /> 
                 
 
 
@@ -19,7 +19,7 @@ export default function ContactForm(){
                     <FormControl fullWidth >
                         {/* <InputLabel>Country</InputLabel> */}
                         <Typography variant="body2" sx={{mb:"0.5" , fontWeight:600}}>Country</Typography>
-                        <Select  defaultValue="Fenland" sx={{borderRadius:2}}>
+                        <Select  defaultValue="Fenland" sx={{borderRadius:0.5}}>
                                 <MenuItem value="Finland">Finland</MenuItem>
                                 <MenuItem value="Afghanistan">Afghanistan</MenuItem>
                                 <MenuItem value="United Kingdom">United Kingdom</MenuItem>
@@ -30,12 +30,13 @@ export default function ContactForm(){
                     <Box>
 
                                 <Typography variant="body2" sx={{mb:"0.5" , fontWeight:600}}>Postal Card</Typography>
-                                <TextField  placeholder="00270" InputProps={{sx:{borderRadius:2}}} />
+                                <TextField  placeholder="00270" InputProps={{sx:{borderRadius:0.5}}} />
                     </Box>
 
                           
                 </Box>
-                 <Button variant="contained" size="large" sx={{mt:0.5 , width:"500px" , bgcolor:"#111" ,"&:hover": { bgcolor: "#000" } , borderRadius:2 , py:1.25 , fontWeight:700}}>
+                 <Button variant="contained" size="large" sx={{mt:0.5 , width:"530px" , height:"60px",fontFamily:"Inter , sans-serif",
+            fontSize:"1rem" , bgcolor:"#111" ,"&:hover": { bgcolor: "#000" } , borderRadius:0.5 , py:1.25 , fontWeight:700}}>
                                Continue
                            </Button>
             </Stack>

@@ -96,7 +96,7 @@ export default function CartList() {
                 <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:700 , fontSize:"1.5rem"}}>
                     {it.name}
                     </Typography>
-                <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:400 , fontSize:"1rem" , mt:1 , ml:"350px"}}>
+                <Typography sx={{fontFamily:"Inter , sans-serif" , fontWeight:400 , fontSize:"1rem" , mt:1 , ml:"200px"}}>
                   {money(it.price)}
                 </Typography>
               </Box>
@@ -125,8 +125,11 @@ export default function CartList() {
             "&:hover": { bgcolor: "#000" },
             borderRadius:"10px",
             px: 2.5,
-            width:"300px",
-            height:"55px"
+            width:"210px",
+            height:"55px",
+            mr:"-90px",
+            fontFamily:"Inter , sans-serif",
+            fontSize:"1rem"
           }}
         >
           Apply Coupon
