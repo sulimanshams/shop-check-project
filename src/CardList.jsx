@@ -56,7 +56,7 @@ export default function CartList() {
               py: 1.5,
               alignItems: "flex-start",
               gap: 2.5,
-              borderBottom: "1px solid",
+              // borderBottom: "1px solid",
               // borderColor: "divider",
             }}
             secondaryAction={
@@ -110,8 +110,8 @@ export default function CartList() {
           </ListItem>
         ))}
       </List>
-
-      <Box sx={{ display: "flex", gap: 1.5, mt:2 }}>
+            <Divider />
+      <Box sx={{ display: "flex", gap: 1.5, mt:4 }}>
         <TextField
           fullWidth
           placeholder="Enter coupon code"
