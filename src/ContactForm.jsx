@@ -5,7 +5,7 @@ import {Box  , Typography , TextField , Stack , Select , MenuItem , InputLabel ,
 
 export default function ContactForm(){
      return (
-        <Box>
+        <Box width="700px">
             <Typography variant="h6" sx={{fontWeight:700, mb:2, mt:"17px", fontFamily:"Inter , sans-serif", fontSize:"16px"}}>Contact Information</Typography>
             <Stack spacing={4} sx={{width:"100%"}}>
                 <Typography variant="body2" sx={{mb:"0.5" , fontWeight:600}}>First & Last name</Typography>

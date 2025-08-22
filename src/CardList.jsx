@@ -35,7 +35,7 @@ function Row({ label, value, bold }) {
   return (
     <Box sx={{ display: "flex", justifyContent: "space-between", my: 1 }}>
       <Typography
-        sx={{ fontWeight: bold ? 700 : 500, color: "text.secondary" }}
+        sx={{ fontWeight: bold ? 700 : 500, color:"text.secondary" }}
       >
         {label}
       </Typography>
@@ -46,7 +46,7 @@ function Row({ label, value, bold }) {
 
 export default function CartList() {
   return (
-    <Box sx={{maxWidth:500}}>
+    <Box sx={{maxWidth:"675px"}}>
       <List disablePadding>
         {items.map((it) => (
           <ListItem
@@ -57,7 +57,7 @@ export default function CartList() {
               alignItems: "flex-start",
               gap: 2.5,
               borderBottom: "1px solid",
-              borderColor: "divider",
+              // borderColor: "divider",
             }}
             secondaryAction={
               <IconButton edge="end" aria-label="remove" size="small" sx={{display:"block" , mt:12}}>
